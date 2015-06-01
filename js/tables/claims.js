@@ -1,7 +1,7 @@
 (function($){
 
 	$.getJSON(
-		"http://cdn.rawgit.com/selvestro/Website/master/assets/claims.json", 
+		"http://cdn.rawgit.com/selvestro/Website/master/assets/claimss.json", 
 			function( data ) {
 
 		$(document).ready(function() {
