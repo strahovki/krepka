@@ -31,6 +31,7 @@
 
     <!-- Circle Tabs -->
     <link rel="stylesheet" href="snippets/circletabs/circletabs.css">
+    <link rel="stylesheet" href="snippets/circletabs/roundtabs.css">
     <link rel="stylesheet" href="snippets/circletabs/tabs.css">
 
     <!-- Morris Donut CSS -->
@@ -122,9 +123,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-12">
                     <div class="intro-message">
-                        <h2><mark>Экономия на страховании до 90%!</mark></h2>
+                        <!-- <h2><mark>Экономия на страховании до 90%!</mark></h2> -->
 
                         <h1>Взаимное<br> онлайн-страхование</h1>
 
@@ -134,26 +135,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <br>когда те, кто платят за страховку,
                         <br>сами распоряжаются страховым фондом</h3>
 
-                        <a href="#about" class="page-scroll btn btn-xl">Узнать подробности</a>
+                        <!-- <a href="#about" class="page-scroll btn btn-xl">Узнать подробности</a> -->
 
                         <hr class="intro-divider">
 
                         <ul class="list-inline intro-social-buttons">
-                            <h3>Чтобы сэкономить:</h3>
+                            <h2><mark>Чтобы сэкономить на страховании до 90%</mark></h2>
                             <li>
-                                <a href="blank.html" class="btn primary">
+                                <a href="ios.html" class="btn primary">
                                   <img class="img" src="appstore/appstore.svg" width="170" height="57" alt="">
                                 </a>
                             </li>
                             <!-- <li>или</li> -->
                             <li>
-                                <a href="blank.html" class="btn primary">
+                                <a href="android.html" class="btn primary">
                                   <img class="img" src="googleplay/googleplay.png" width="170" height="57" alt="">
                                 </a>
                             </li>
                             <div class="row"><p>или</p></div>
                             <div class="row">
-                                <a href="#about" class="btn btn-xl">заполните заявку на страхование</a>
+                                <a href="#about" class="btn btn-xl">Заполните заявку на страхование</a>
+                                <!-- <a href="#about" class="btn primary btn-md">Заполните заявку на страхование</a> -->
                             </div>
                         </ul>
 
@@ -182,7 +184,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="container">
 
         <div class="row text-center">
-            <div class="col-lg-12">
+            <div class="col-xs-12">
                 <div class="page-header">
                     <h1>Подробнее о взаимном страховании</h1>
                 </div>
@@ -190,7 +192,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
 
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-xs-12">
 
               <p class="lead">
                 В общем виде, 
@@ -202,21 +204,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
 
               <div class="row text-center">
-                  <div class="col-lg-3">
+                  <div class="col-xs-3">
                       <img class="img-responsive" src="img/people/people-money-out.png" alt="">
                   </div>
-                  <div class="col-lg-1">
+                  <div class="col-xs-1">
                       <p>Формирование фонда</p>
                       <!-- <img class="img-responsive" src="img/people/people-money-out.png" alt=""> -->
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-xs-3">
                       <img class="img-responsive" src="img/people/people-money-in.png" alt="">
                   </div>
-                  <div class="col-lg-1">
+                  <div class="col-xs-1">
                       <p>Выплаты из фонда</p>
                       <!-- <img class="img-responsive" src="img/people/people-money-out.png" alt=""> -->
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-xs-3">
                       <img class="img-responsive" src="img/people/people-injured-money-out.png" alt="">
                   </div>
               </div>
@@ -577,7 +579,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- STATISTICS -->
     <div class="container">
         <div class="row text-center">
-            <h2>Статистика</h2>
+            <h1>Статистика</h1>
             <!-- STATISTICS OFFICIAL -->
             <div class="col-lg-6">
                 <div class="row text-center">
@@ -585,7 +587,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="row text-center">
                       <div id="line-example1"></div>
                       <div class="hidden" id="code3" class="prettyprint linenums">
-                            var money_data = [ {"year": "2008", "premiums": 25407500, "claims": 15800910}, {"year": "2009", "premiums": 26407500, "claims": 16800910}, {"year": "2010", "premiums": 27407500, "claims": 18800910}, {"year": "2011", "premiums": 28407500, "claims": 20800910}, {"year": "2012", "premiums": 29407500, "claims": 26000910}, {"year": "2013", "premiums": 35407500, "claims": 30800910}, {"year": "2014", "premiums": 40407500, "claims": 36800910} ]; Morris.Line({ element: 'line-example1', data: money_data, xkey: 'year', ykeys: ['premiums', 'claims'], labels: ['Собрано страховых премий', 'Выплачено по страховым случаям'] });
+                            var money_data = [ {"year": "2008", "premiums": 551901600, "claims": 248649605}, {"year": "2009", "premiums": 513176283, "claims": 285129389}, {"year": "2010", "premiums": 557180081, "claims": 294508681}, {"year": "2011", "premiums": 664370163, "claims": 303524533}, {"year": "2012", "premiums": 809059774, "claims": 369439725}, {"year": "2013", "premiums": 904429830, "claims": 420769030}, {"year": "2014", "premiums": 987772587, "claims": 472268587} ]; Morris.Line({ element: 'line-example1', data: money_data, xkey: 'year', ykeys: ['premiums', 'claims'], labels: ['Собрано страховых премий', 'Выплачено по страховым случаям'] });
                       </div>
                     </div>
 
@@ -600,7 +602,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="row text-center">
                       <div id="line-example2"></div>
                       <div class="hidden" id="code4" class="prettyprint linenums">
-                        var money_data = [ {"year": "2008", "premiums": 250407500, "claims": 105800910}, {"year": "2009", "premiums": 264507500, "claims": 160800910}, {"year": "2010", "premiums": 274207500, "claims": 180800910}, {"year": "2011", "premiums": 280407500, "claims": 208800910}, {"year": "2012", "premiums": 294807500, "claims": 260000910}, {"year": "2013", "premiums": 354207500, "claims": 308200910}, {"year": "2014", "premiums": 404407500, "claims": 362800910} ]; Morris.Line({ element: 'line-example2', data: money_data, xkey: 'year', ykeys: ['premiums', 'claims'], labels: ['Собрано страховых премий', 'Выплачено по страховым случаям'] });
+                        var money_data = [ {"year": "2008", "premiums": 25047500, "claims": 10580910}, {"year": "2009", "premiums": 26457500, "claims": 12000910}, {"year": "2010", "premiums": 27427500, "claims": 14080910}, {"year": "2011", "premiums": 28047500, "claims": 16800910}, {"year": "2012", "premiums": 29407500, "claims": 17000910}, {"year": "2013", "premiums": 35207500, "claims": 20200910}, {"year": "2014", "premiums": 40407500, "claims": 24800910} ]; Morris.Line({ element: 'line-example2', data: money_data, xkey: 'year', ykeys: ['premiums', 'claims'], labels: ['Собрано страховых премий', 'Выплачено по страховым случаям'] });
                       </div>
                     </div>
 
@@ -653,7 +655,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       <p>Гарантия уверенности в завтрашнем дне</p>
                   </div>
                   <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                      <img class="img-responsive" src="img/people/people-money-out.png" alt="">
+                      <img class="img-responsive" src="img/people/people-money-in.png" alt="">
                   </div>
               </div>
           </div>
@@ -690,7 +692,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="container">
 
               <div class="row">
-                  <div class="col-lg-5 col-sm-6">
+                  <div class="col-lg-4 col-sm-6">
                       <hr class="section-heading-spacer">
                       <div class="clearfix"></div>
                       <h2 class="section-heading">Прозрачное управление страховыми фондами</h2>
@@ -703,7 +705,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       <p>Можно “договориться” с конкретным человеком, а вот с сообществом договориться нельзя.</p>
                       <p>Сообщество заинтересовано в большем числе безубыточных участников, поэтому будет проводить естественный отбор.</p>
                   </div>
-                  <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                  <div class="col-lg-6 col-lg-offset-2 col-sm-6">
                     <div class="row">
                             <div class="col-lg-12">
                                 <div class="panel panel-default">
@@ -733,6 +735,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                             <th>Name</th>
                                                             <th>Capital</th>
                                                             <th>Area</th>
+                                                            <th>Currency</th>
+                                                            <th>Currency</th>
                                                             <th>Currency</th>
                                                         </tr>
                                                     </thead>
@@ -777,127 +781,99 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>
 
-        <div class="row">
-            <div class="board">
-                <div class="board-inner">
-                    <ul class="nav nav-tabs" id="myTab">
-
-                        <div class="liner"></div>
-                        <li class="active">
-                            <a href="#insure1" data-toggle="tab" title="insureTab1">
-                                <span class="round-tabs one">
-                                <!-- <i class="glyphicon glyphicon-home"></i> -->
-                                <i class="fa fa-calculator"></i>
-                                <p class="text-center">1</p>
-                                </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#insure2" data-toggle="tab" title="insureTab2">
-                                <span class="round-tabs two">
-                                <!-- <i class="glyphicon glyphicon-user"></i> -->
-                                <i class="fa fa-info"></i>
-                                <p class="text-center">2</p>
-                                </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#insure3" data-toggle="tab" title="insureTab3">
-                                <span class="round-tabs three">
-                                <!-- <i class="glyphicon glyphicon-gift"></i> -->
-                                <i class="fa fa-credit-card"></i>
-                                <p class="text-center">3</p>
-                                </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#insure4" data-toggle="tab" title="insureTab4">
-                                <span class="round-tabs four">
-                                <!-- <i class="glyphicon glyphicon-comment"></i> -->
-                                <i class="fa fa-camera"></i>
-                                <p class="text-center">4</p>
-                                </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#insure5" data-toggle="tab" title="insureTab5">
-                                <span class="round-tabs five">
-                                <!-- <i class="glyphicon glyphicon-ok"></i> -->
-                                <i class="fa fa-check"></i>
-<!--                                 <p class="text-center">5</p>
- -->                                </span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="tab-content">
-                    <div class="tab-pane fade in active" id="insure1">
-
-                        <!-- <h3 class="head text-center">Расчет стоимости риска</h3> -->
-                        <h3 class="text-center">1. Расчет стоимости риска</h3>
-                        <!-- <p class="narrow text-center"> -->
-                        <p class="lead text-center">
-                            Рассчитайте стоимость страхования в вашем мобильном телефоне или на сайте.
-                        </p>
-                        <p class="text-center">
-                            <a href="" class="btn btn-success btn-outline-rounded green">Сделать расчет...<span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
-                        </p>
+        <div class="[ container text-center ]">
+            <div class="[ row ]">
+                <div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ]" role="tabpanel">
+                    <div class="[ col-xs-4 col-sm-12 ]">
+                        <!-- Nav tabs -->
+                        <ul class="[ nav nav-justified ]" id="nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#insure1" aria-controls="insure1" role="tab" data-toggle="tab">
+                                    <img class="img-circle" src="img/awesome/calendar52.png" />
+                                    <span class="quote"><i class="fa fa-quote-right"></i></span>
+                                </a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#insure2" aria-controls="insure2" role="tab" data-toggle="tab">
+                                    <img class="img-circle" src="img/awesome/information34.png" />
+                                    <span class="quote"><i class="fa fa-quote-left"></i></span>
+                                </a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#insure3" aria-controls="insure3" role="tab" data-toggle="tab">
+                                    <img class="img-circle" src="img/awesome/information34.png" />
+                                    <span class="quote"><i class="fa fa-calculator"></i></span>
+                                </a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#insure4" aria-controls="insure4" role="tab" data-toggle="tab">
+                                    <img class="img-circle" src="img/awesome/information34.png" />
+                                    <span class="quote"><i class="fa fa-quote-left"></i></span>
+                                </a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#insure5" aria-controls="insure5" role="tab" data-toggle="tab">
+                                    <img class="img-circle" src="img/awesome/information34.png" />
+                                    <span class="quote"><i class="fa fa-quote-left"></i></span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="tab-pane fade" id="insure2">
-                        <h3 class="text-center">2. Заполнение минимально необходимых данных для страхования</h3>
-                        <p class="lead text-center">
-                            Сообщите необходимые сведения.
-                        </p>
-                        <p class="text-center">
-                            <!-- <a href="" class="btn btn-success btn-outline-rounded green"> Подробнее... <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a> -->
-                        </p>
+                    <div class="[ col-xs-8 col-sm-12 ]">
+                        <!-- Tab panes -->
+                        <div class="tab-content" id="tabs-collapse">            
+                            <div role="tabpanel" class="tab-pane fade in active" id="insure1">
+                                <div class="tab-inner">   
+                                <h3 class="text-center">1. Расчет стоимости риска</h3>
+                                <p class="lead text-center">
+                                    Рассчитайте стоимость страхования в вашем мобильном телефоне или на сайте.
+                                </p>
+                                <p class="text-center">
+                                    <a href="" class="btn btn-success btn-outline-rounded green">Сделать расчет...<span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                                </p>                              
+                                </div>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane fade" id="insure2">
+                                <div class="tab-inner">
+                                    <h3 class="text-center">2. Заполнение минимально необходимых данных для страхования</h3>
+                                    <p class="lead text-center">Сообщите необходимые сведения.</p>
+                                </div>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane fade" id="insure3">
+                                <div class="tab-inner">
+                                    <h3 class="text-center">3. Оплата страхования</h3>
+                                    <p class="lead text-center">Оплатите страховку через мобильный телефон или через сайт. Получите электронный страховой полис.</p>
+                                </div> 
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane fade" id="insure4">
+                                <div class="tab-inner">
+                                    <h3 class="text-center">4. Проведение необходимых действий по осмотру</h3>
+                                    <p class="lead text-center">Сделайте предстраховой осмотр, если это необходимо.</p>
+                                </div>
+                            </div>
 
-                    </div>
-                    <div class="tab-pane fade" id="insure3">
-                        <h3 class="text-center">3. Оплата страхования</h3>
-                        <p class="lead text-center">
-                            Оплатите страховку через мобильный телефон или через сайт. Получите электронный страховой полис.
-                        </p>
-
-                        <p class="text-center">
-                            <!-- <a href="" class="btn btn-success btn-outline-rounded green"> Подробнее... <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a> -->
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="insure4">
-                        <h3 class="text-center">4. Проведение необходимых действий по осмотру</h3>
-                        <p class="lead text-center">
-                            Сделайте предстраховой осмотр, если это необходимо.
-                        </p>
-
-                        <p class="text-center">
-                            <!-- <a href="" class="btn btn-success btn-outline-rounded green"> Подробнее... <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a> -->
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="insure5">
-                        <div class="text-center">
-                            <i class="img-intro icon-checkmark-circle"></i>
+                            <div role="tabpanel" class="tab-pane fade" id="insure5">
+                                <div class="tab-inner">
+                                    <div class="text-center">
+                                    <i class="img-intro icon-checkmark-circle"></i>
+                                </div>
+                                <h3 class="text-center">Результат - ВЫГОДА ДО 50%</h3>
+                                <p class="lead text-center">
+                                    С помощью оптимизации и правильного расходования собранных страховых фондов, окончательная стоимость страхования может быть ниже на 50%
+                                </p>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="text-center">Результат - ВЫГОДА ДО 50%</h3>
-                        <p class="lead text-center">
-                            С помощью оптимизации и правильного расходования собранных страховых фондов, окончательная стоимость страхования может быть ниже на 50%
-                        </p>
-                    </div>
-                    <div class="clearfix"></div>
+                    </div>        
                 </div>
-
             </div>
         </div>
     </div>
     <!-- END HOW TO INSURE -->
-
     <hr>
-
     <!-- HOW TO CLAIM -->
     <a name="howtoclaim" id="howtoclaim"></a>
 
@@ -911,117 +887,111 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>
 
-        <div class="row">
-            <div class="board">
-                <div class="board-inner">
-                    <ul class="nav nav-tabs" id="myTab">
-
-                        <div class="liner"></div>
-                        <li class="active">
-                            <a href="#claim1" data-toggle="tab" title="welcome">
-                                <span class="round-tabs one">
-                  <i class="glyphicon glyphicon-home"></i>
-                </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#claim2" data-toggle="tab" title="profile">
-                                <span class="round-tabs two">
-                  <i class="glyphicon glyphicon-user"></i>
-                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#claim3" data-toggle="tab" title="bootsnipp goodies">
-                                <span class="round-tabs three">
-                  <i class="glyphicon glyphicon-gift"></i>
-                </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#claim4" data-toggle="tab" title="blah blah">
-                                <span class="round-tabs four">
-                  <i class="glyphicon glyphicon-comment"></i>
-                </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#claim5" data-toggle="tab" title="completed">
-                                <span class="round-tabs five">
-                  <i class="glyphicon glyphicon-ok"></i>
-                </span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="tab-content">
-                    <div class="tab-pane fade in active" id="claim1">
-
-                        <h3 class="text-center">1. Фотографирование события, обращение в компетентные органы</h3>
-                        <p class="lead text-center">
-                            Сфотографируйте обстоятельства события и отправьте фотографии через приложение или веб-сайт.
-                        </p>
-                        <figure>
-                            <img class="img-responsive" src="img/accident/car-photography.png" alt="">
-                        </figure>
-                        <p class="text-center">
-                            <a href="" class="btn btn-success btn-outline-rounded green"> Подать заявление... <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
-                        </p>
+        <div class="[ container text-center ]">
+            <div class="[ row ]">
+                <div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ]" role="tabpanel">
+                    <div class="[ col-xs-4 col-sm-12 ]">
+                        <!-- Nav tabs -->
+                        <ul class="[ nav nav-justified ]" id="nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#claim1" aria-controls="claim1" role="tab" data-toggle="tab">
+                                    <img class="img-circle" src="img/awesome/calendar52.png" />
+                                    <span class="quote"><i class="fa fa-quote-right"></i></span>
+                                </a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#claim2" aria-controls="claim2" role="tab" data-toggle="tab">
+                                    <img class="img-circle" src="img/awesome/information34.png" />
+                                    <span class="quote"><i class="fa fa-quote-left"></i></span>
+                                </a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#claim3" aria-controls="claim3" role="tab" data-toggle="tab">
+                                    <img class="img-circle" src="img/awesome/information34.png" />
+                                    <span class="quote"><i class="fa fa-calculator"></i></span>
+                                </a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#claim4" aria-controls="claim4" role="tab" data-toggle="tab">
+                                    <img class="img-circle" src="img/awesome/information34.png" />
+                                    <span class="quote"><i class="fa fa-quote-left"></i></span>
+                                </a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#claim5" aria-controls="claim5" role="tab" data-toggle="tab">
+                                    <img class="img-circle" src="img/awesome/information34.png" />
+                                    <span class="quote"><i class="fa fa-quote-left"></i></span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="tab-pane fade" id="claim2">
-                        <h3 class="text-center">2. Подача заявления на страховую выплату</h3>
-                        <p class="lead text-center">
-                            Сообщите о случившейся неприятности участникам вашего фонда. Укажите обстоятельства и, если известен, размер страховой компенсации.
-                        </p>
-                        <p class="text-center">
-                            <!-- <a href="" class="btn btn-success btn-outline-rounded green"> Подробнее... <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a> -->
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="claim3">
-                        <h3 class="text-center">3. Определение размера ущерба</h3>
-                        <p class="lead text-center">
-                            Сделайте оценку ущерба на станции или у независимого эксперта.
-                        </p>
-                        <p class="text-center">
-                            <!-- <a href="" class="btn btn-success btn-outline-rounded green"> Подробнее... <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a> -->
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="claim4">
-                        <h3 class="text-center">4. Получение страхового возмещения</h3>
-                        <p class="lead text-center">
-                            В течение 1 дня после того, как станет известен размер ущерба, деньги будут отправлены на вашу банковскую карту. Либо будет оплачен счет из сервисного центра, медицинского или иного учреждения.
-                        </p>
-                        <figure>
-                            <img class="img-responsive" src="img/accident/car-accident-schema-pay.png" alt="">
-                        </figure>
-                        <p class="text-center">
-                            <!-- <a href="" class="btn btn-success btn-outline-rounded green"> Подробнее... <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a> -->
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="claim5">
-                        <div class="text-center">
-                            <i class="img-intro icon-checkmark-circle"></i>
+
+                    <div class="[ col-xs-8 col-sm-12 ]">
+                        <!-- Tab panes -->
+                        <div class="tab-content" id="tabs-collapse">            
+                            <div role="tabpanel" class="tab-pane fade in active" id="claim1">
+                                <div class="tab-inner">
+                                    <h3 class="text-center">1. Фотографирование события, обращение в компетентные органы</h3>
+                                    <p class="lead text-center">
+                                        Сфотографируйте обстоятельства события и отправьте фотографии через приложение или веб-сайт.
+                                    </p>
+                                    <figure><img class="img-responsive" src="img/accident/car-photography.png" alt=""></figure>
+                                    <p class="text-center">
+                                        <a href="" class="btn btn-success btn-outline-rounded green"> Подать заявление... 
+                                            <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span>
+                                        </a>
+                                    </p>                              
+                                </div>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane fade" id="claim2">
+                                <div class="tab-inner">
+                                    <h3 class="text-center">2. Подача заявления на страховую выплату</h3>
+                                    <p class="lead text-center">
+                                    Сообщите о случившейся неприятности участникам вашего фонда. Укажите обстоятельства и, если известен, размер страховой компенсации.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane fade" id="claim3">
+                                <div class="tab-inner">
+                                    <h3 class="text-center">3. Определение размера ущерба</h3>
+                                    <p class="lead text-center">Сделайте оценку ущерба на станции или у независимого эксперта.</p>
+                                </div> 
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane fade" id="claim4">
+                                <div class="tab-inner">
+                                    <h3 class="text-center">4. Получение страхового возмещения</h3>
+                                    <p class="lead text-center">
+                                    В течение 1 дня после того, как станет известен размер ущерба, деньги будут отправлены на вашу банковскую карту. Либо будет оплачен счет из сервисного центра, медицинского или иного учреждения.
+                                    </p>
+                                    <figure>
+                                        <img class="img-responsive" src="img/accident/car-accident-schema-pay.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane fade" id="claim5">
+                                <div class="tab-inner">
+                                    <div class="text-center">
+                                    <i class="img-intro icon-checkmark-circle"></i>
+                                </div>
+                                    <div class="text-center">
+                                        <i class="img-intro icon-checkmark-circle"></i>
+                                    </div>
+                                    <h3 class="text-center">Результат - СОКРАЩЕНИЕ СРОКОВ ВЫПЛАТЫ до 1 дня</h3>
+                                    <p class="lead text-center">На конец страхового периода неиспользованные деньги остаются страховом фонде или могут быть возвращены.</p>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="text-center">Результат - СОКРАЩЕНИЕ СРОКОВ ВЫПЛАТЫ до 1 дня</h3>
-                        <p class="lead text-center">
-                            На конец страхового периода неиспользованные деньги остаются страховом фонде или могут быть возвращены.
-                        </p>
-                    </div>
-                    <div class="clearfix"></div>
+                    </div>        
                 </div>
-
             </div>
         </div>
     </div>
-    <!-- END HOW TO INSURE -->
-
+    <!-- END HOW TO CLAIM -->
     <hr>
-
     <!-- FAQ -->
     <a name="faq" id="faq"></a>
 
