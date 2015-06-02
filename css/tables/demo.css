@@ -331,3 +331,5 @@ div.column_half {
 	}
 }
 
+.alignAmountClaimedRight { text-align: right; }
+.alignAmounPaidRight { text-align: right; }

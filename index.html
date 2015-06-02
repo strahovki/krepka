@@ -50,7 +50,9 @@
 
     <!-- Tables -->
     <!-- <link rel="stylesheet" type="text/css" href="css/tables/demo.css"> -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.7/css/jquery.dataTables.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/tables/jquery.dataTables.css">
+
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/tabletools/2.2.4/css/dataTables.tableTools.css">
     <link rel="stylesheet" type="text/css" href="css/tables/dataTables.editor.css">
 
@@ -60,8 +62,8 @@
     <!-- // <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-1.11.2.js"></script> -->
     <script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/tabletools/2.2.4/js/dataTables.tableTools.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/tables/policies.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/tables/claims.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/tables/policies_short.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/tables/claims_short.js"></script>
 
     <link rel="shortcut icon" href="img/favicon.ico">
 
@@ -141,7 +143,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </li>
                             <div class="row"><p>или</p></div>
                             <div class="row">
-                                <a href="blank.html" class="btn btn-xl">Заполните заявку онлайн</a>
+                                <a href="blank.html" class="btn btn-primary btn-lg">Заполните заявку онлайн</a>
                             </div>
                         </ul>
 
@@ -268,10 +270,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="col-lg-12">
                 <ul class="list-inline">
                     <li>
-                        <a href="blank.html" class="btn primary btn-xl">Да, все понятно, заполнить заявку</a>
+                        <a href="blank.html" class="btn btn-primary btn-lg">Да, все понятно, заполнить заявку</a>
                     </li>
                     <li>
-                        <a href="#product" class="page-scroll btn primary btn-xl">Нет, нужно больше информации</a>
+                        <a href="#product" class="page-scroll btn btn-primary btn-lg">Нет, нужно больше информации</a>
                     </li>
                 </ul>
             </div>
@@ -304,7 +306,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       <p class="lead">Гарантия уверенности в завтрашнем дне.</p>
                   </div>
                   <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                      <img class="img-responsive" src="img/logo/logo.png" alt="">
+                      <img class="img-responsive" src="img/management.png" alt="">
                   </div>
               </div>
           </div>
@@ -328,7 +330,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       полученные деньги за страхование.</p>
                   </div>
                   <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                      <img class="img-responsive" src="img/people/mutual.png" alt="">
+                      <img class="img-responsive" src="img/goal.png" alt="">
                   </div>
               </div>
 
@@ -379,12 +381,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                 <table class="compact hover stripe" cellpadding="0" cellspacing="0" border="0" class="display" id="policies" width="100%">
                                                     <thead>
                                                         <tr>
-                                                            <th>Name</th>
-                                                            <th>Capital</th>
-                                                            <th>Area</th>
-                                                            <th>Currency</th>
-                                                            <th>Currency</th>
-                                                            <th>Currency</th>
+                                                            <th>Полис</th>
+                                                            <th>Объект</th>
+                                                            <th>Страховая сумма</th>
+                                                            <th>Страховая премия</th>
                                                         </tr>
                                                     </thead>
                                                 </table>
@@ -395,10 +395,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                 <table cellpadding="0" cellspacing="0" border="0" class="display" id="claims" width="100%">
                                                     <thead>
                                                         <tr>
-                                                            <th>Name</th>
-                                                            <th>Capital</th>
-                                                            <th>Area</th>
-                                                            <th>Currency</th>
+                                                            <th class="text-center">Убыток</th>
+                                                            <th class="text-center">Дата заявления</th>
+                                                            <th class="text-center">Сумма заявленная</th>
+                                                            <!-- <th class="text-center">Дата выплаты</th>
+                                                            <th class="text-center">Сумма выплаченная</th>
+                                                            <th class="text-center">Страховой полис</th> -->
                                                         </tr>
                                                     </thead>
                                                 </table>
@@ -414,7 +416,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
           </div>
       </div>
+
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="blank.html" class="btn btn-primary btn-lg">Да, все понятно, заполнить заявку</a>
+                    </li>
+                    <li>
+                        <a href="#product" class="page-scroll btn btn-primary btn-lg">Нет, нужно больше информации</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     <!-- END PRODUCT -->
+    <hr>
     <!-- FEATURES -->
     <a name="product" id="product"></a>
 
@@ -493,15 +509,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <p><br></p>
             </div>
         </div>
+        <hr>
         <div class="row text-center">
             <div class="col-lg-12">
-              <hr>
                 <ul class="list-inline">
                     <li>
-                        <a href="blank.html" class="btn primary btn-xl">Да, хочу попробовать</a>
+                        <a href="blank.html" class="btn btn-primary btn-lg">Да, все понятно, заполнить заявку</a>
                     </li>
                     <li>
-                        <a href="#product" class="page-scroll btn primary btn-xl">Нет, читать дальше</a>
+                        <a href="#product" class="page-scroll btn btn-primary btn-lg">Нет, нужно больше информации</a>
                     </li>
                 </ul>
             </div>
@@ -509,16 +525,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
     <!-- END FEATURES -->
     <hr>
-    <!-- MONEY SPEND -->
-    <div class="container">
-
-        <div class="row text-center">
-          
-        </div>
-
-    </div>
-    <!-- END MONEY SPEND -->
-
     <!-- KINDS -->
     <a name="services"></a>
 
@@ -703,6 +709,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
             </p>
         </div>
+        <hr>
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="blank.html" class="btn btn-primary btn-lg">Да, все понятно, заполнить заявку</a>
+                    </li>
+                    <li>
+                        <a href="#product" class="page-scroll btn btn-primary btn-lg">Нет, нужно больше информации</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <!-- END KINDS -->
     <hr>
@@ -760,6 +779,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   или на специализированных  
                   <a target="#" href="http://www.insur-info.ru/statistics">ресурсах по страхованию</a>
                 </p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="blank.html" class="btn btn-primary btn-lg">Да, все понятно, заполнить заявку</a>
+                    </li>
+                    <li>
+                        <a href="#product" class="page-scroll btn btn-primary btn-lg">Нет, нужно больше информации</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -1402,6 +1434,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             </div>
         </div>
+
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="blank.html" class="btn btn-primary btn-lg">Да, все понятно, заполнить заявку</a>
+                    </li>
+                    <li>
+                        <a href="#product" class="page-scroll btn btn-primary btn-lg">Нет, нужно больше информации</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <!-- END FAQ -->
 
@@ -1524,6 +1569,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>
 
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="blank.html" class="btn btn-primary btn-lg">Да, все понятно, заполнить заявку</a>
+                    </li>
+                    <li>
+                        <a href="#product" class="page-scroll btn btn-primary btn-lg">Нет, нужно больше информации</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </div>
     <!-- END REASONS -->
 
@@ -1619,15 +1677,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- CONTACTS -->
     <div id="contact" class="container">
         <div class="row">
-            <div class="page-header text-center">
-                <h1>Не пропустите</small></h1>
-            </div>
 
-            <div class="col-lg-12 text-center">
-                <h3 class="section-subheading text-muted">Узнайте подробности о выходе первым!</h3>
-            </div>
         </div>
         <div class="row">
+            <div class="page-header text-center">
+                <h1>Узнайте подробности о выходе первым!</h1>
+            </div>
             <div class="col-lg-12">
                 <form name="sentMessage" id="contactForm" action="//github.us10.list-manage.com/subscribe/post?u=e83cfd2af8d9ace720e3b3dc4&amp;id=f59919c89b" method="post" novalidate>
                     <div class="row">
@@ -1640,7 +1695,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="clearfix"></div>
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">Присоединиться</button>
+                            <button type="submit" class="btn btn-primary btn-lg">Присоединиться</button>
                         </div>
                     </div>
                 </form>
@@ -1690,14 +1745,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 <div class="col-md-3 col-sm-6 inner">
                     <h4>Кто мы</h4>
-                    <!-- <a href="index.html"><img class="logo img-intext" src="img/ipad.png" alt=""></a> -->
+
                     <a href="index.html">
-                        <img class="img-responsive" src="img/ipad.png" alt="">
+                        <img class="img-responsive" src="img/map-image.png" alt="">
                     </a>
                     <p>Мы профессионалы в страховании. Мы профессионалы в использовании современных технологий.</p>
                     <a href="about.html" class="txt-btn">Еще про нас</a>
                 </div>
-                <!-- /.col -->
 
                 <div class="col-md-3 col-sm-6 inner">
                     <h4>Наши партнеры</h4>
@@ -1708,60 +1762,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <figure class="icon-overlay icn-link">
                                 <a href="portfolio-post.html">
                                     <span class="icn-more"></span>
-                                    <img class="img-responsive" src="img/ipad.png" alt="">
+                                    <img class="img-responsive" src="img/map-image.png" alt="">
                                 </a>
                             </figure>
                         </div>
-                        <!-- /.thumb -->
 
                         <div class="col-xs-6 thumb">
                             <figure class="icon-overlay icn-link">
                                 <a href="portfolio-post.html">
                                     <span class="icn-more"></span>
-                                    <img class="img-responsive" src="img/ipad.png" alt="">
+                                    <img class="img-responsive" src="img/map-image.png" alt="">
                                 </a>
                             </figure>
                         </div>
-                        <!-- /.thumb -->
 
                         <div class="col-xs-6 thumb">
                             <figure class="icon-overlay icn-link">
                                 <a href="portfolio-post.html">
                                     <span class="icn-more"></span>
-                                    <img class="img-responsive" src="img/ipad.png" alt="">
+                                    <img class="img-responsive" src="img/map-image.png" alt="">
                                 </a>
                             </figure>
                         </div>
-                        <!-- /.thumb -->
 
                         <div class="col-xs-6 thumb">
                             <figure class="icon-overlay icn-link">
                                 <a href="portfolio-post.html">
                                     <span class="icn-more"></span>
-                                    <img class="img-responsive" src="img/ipad.png" alt="">
+                                    <img class="img-responsive" src="img/map-image.png" alt="">
                                 </a>
                             </figure>
                         </div>
-                        <!-- /.thumb -->
 
                     </div>
-                    <!-- /.row -->
                 </div>
-                <!-- /.col -->
 
 
                 <div class="col-md-3 col-sm-6 inner">
                     <h4>Будем на связи</h4>
                     <p>Подпишитесь на нашу рассылку и будьте в курсе всех новостей.</p>
-                    <ul class="contacts">
-                        <li><i class="icon-location contact"></i>Санкт-Петербург, ул.Учительская, д.18, корп.3, офис 6-Н</li>
-                        <li><i class="icon-mobile contact"></i>+7 (921) 753 23 83</li>
-                        <li><a href="#"><i class="icon-mail-1 contact"></i>join@besure.org</a>
-                        </li>
-                    </ul>
-                    <!-- /.contacts -->
+                    <p><i class="fa map-marker"></i> Санкт-Петербург, ул.Учительская, д.18, корп.3, офис 6-Н</p>
+                    <p><i class="fa fa-mobile"></i> +7 (921) 753 23 83</p>
+                    <p><a href="#"><i class="fa fa-envelope-o"></i> join@besure.org</a></p>
                 </div>
-                <!-- /.col -->
 
                 <div class="col-md-3 col-sm-6 inner">
                     <h4>Бесплатные обновления</h4>
@@ -1772,14 +1815,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <button type="submit" class="btn btn-default btn-submit">Подписаться</button>
                     </form>
                 </div>
-                <!-- /.col -->
 
             </div>
-            <!-- /.row -->
         </div>
         <!-- .container -->
-
-        <!-- <div class="footer-bottom">
+<!--     <footer>
+        <div class="footer-bottom">
 				<div class="container inner">
 					<p class="pull-left">© 2014 REEN. All rights reserved.</p>
 					<ul class="footer-menu pull-right">

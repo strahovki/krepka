@@ -23,18 +23,6 @@
 					{
 						"label": "Сумма заявленная",
 						"name": "amountClaimed"
-					},
-					{
-						"label": "Дата выплаты",
-						"name": "datePaid"
-					},
-					{
-						"label": "Сумма выплаченная",
-						"name": "amountPaid"
-					},
-					{
-						"label": "Страховой полис",
-						"name": "policy"
 					}
 				],
 		    	"columns": [
@@ -50,19 +38,6 @@
 						"data": "amountClaimed",
 						"render": $.fn.dataTable.render.number( ' ', ',', 2, '' ),
 						"sClass": "alignCenter"
-					},
-					{
-						"data": "datePaid",
-						"sClass": "alignCenter"
-					},
-					{
-						"data": "amountPaid",
-						"render": $.fn.dataTable.render.number( ' ', ',', 2, '' ),
-						"sClass": "alignCenter"
-					},
-					{
-						"data": "policy",
-						"sClass": "alignCenter"
 					}
 				],
 				"language": {
@@ -71,7 +46,11 @@
         		"paging":   false,
         		"ordering": false,
         		"info":     false,
-        		"sDom": '<"top"i>rt<"bottom"flp><"clear">'
+        		"sDom": '<"top"i>rt<"bottom"flp><"clear">',
+        		"bHeader" : false,
+        		"bPaginate": false,
+        		"bFilter": false,
+        		"bInfo": false
     		} );
 		} );
 	} );
